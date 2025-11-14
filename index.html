@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Mi Landing Page — Proyecto</title>
+		<meta name="description" content="Esquema simple de landing page en HTML puro" />
+		<style>
+			:root{--accent:#4f46e5;--muted:#6b7280;--bg:#f8fafc}
+			*{box-sizing:border-box}
+			body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;color:#111;background:var(--bg);margin:0}
+			.container{max-width:1100px;margin:0 auto;padding:2rem}
+			header{background:#fff;border-bottom:1px solid #e6edf3}
+			.nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+			.brand{font-weight:700;color:var(--accent)}
+			nav a{margin-left:1rem;color:var(--muted);text-decoration:none;font-weight:600}
+			.hero{display:flex;flex-direction:column;gap:1rem;padding:4rem 0;align-items:flex-start}
+			.hero h1{font-size:2.25rem;margin:0;color:#0f172a}
+			.hero p{color:var(--muted);margin:0;max-width:60ch}
+			.btn{display:inline-block;padding:.75rem 1.2rem;border-radius:.5rem;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+			.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+			.card{background:#fff;padding:1.25rem;border-radius:.5rem;border:1px solid #e6edf3}
+			.card h3{margin:0 0 .5rem 0}
+			.cta{background:linear-gradient(90deg,#eef2ff,#fff);padding:2rem;border-radius:.75rem;margin:2rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+			footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
+			.footer-grid{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+			@media(min-width:768px){.hero{flex-direction:row;align-items:center;justify-content:space-between}.hero h1{font-size:3rem}}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container nav">
+				<div class="brand">MiProyecto</div>
+				<nav>
+					<a href="#features">Características</a>
+					<a href="#precios">Precios</a>
+					<a href="#contacto">Contacto</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="container">
+			<section class="hero" id="inicio">
+				<div>
+					<h1>Construye algo increíble hoy</h1>
+					<p>Un esquema mínimo de landing page en HTML puro, listo para adaptar con tu contenido, estilos y recursos. Rápido, accesible y fácil de personalizar.</p>
+					<p style="margin-top:1rem"><a class="btn" href="#contacto">Comenzar ahora</a></p>
+				</div>
+				<div style="max-width:420px;background:linear-gradient(135deg,#eef2ff,#fff);padding:1.5rem;border-radius:.75rem;border:1px solid #e6edf3">
+					<strong>Demo rápido</strong>
+					<p style="color:var(--muted);margin:0.5rem 0 0 0">Coloca aquí una imagen, captura o resumen de tu producto.</p>
+				</div>
+			</section>
+
+			<section id="features">
+				<h2 style="margin-top:2rem">Características</h2>
+				<div class="features">
+					<article class="card">
+						<h3>Rápido y ligero</h3>
+						<p style="margin:0;color:var(--muted)">Sólo HTML y CSS con estructura semántica para mejor rendimiento.</p>
+					</article>
+					<article class="card">
+						<h3>Fácil de personalizar</h3>
+						<p style="margin:0;color:var(--muted)">Cambia colores, tipografía y contenido sin tocar JS.</p>
+					</article>
+					<article class="card">
+						<h3>Responsive</h3>
+						<p style="margin:0;color:var(--muted)">Diseño adaptativo con una sola rejilla flexible.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="cta" aria-labelledby="cta-title">
+				<div>
+					<h3 id="cta-title" style="margin:0">Listo para empezar?</h3>
+					<p style="margin:0;color:var(--muted)">Contacta con nosotros para una demo rápida o preguntas.</p>
+				</div>
+				<div>
+					<a class="btn" href="#contacto">Agenda una demo</a>
+				</div>
+			</section>
+
+			<section id="contacto">
+				<h2>Contacto</h2>
+				<p style="color:var(--muted)">Correo: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a> — Dirección: Ciudad, País.</p>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container footer-grid">
+				<div>© 2025 MiProyecto. Todos los derechos reservados.</div>
+				<div>
+					<a href="#" style="margin-right:1rem;color:var(--muted);text-decoration:none">Privacidad</a>
+					<a href="#" style="color:var(--muted);text-decoration:none">Términos</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
